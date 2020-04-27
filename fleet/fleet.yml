@@ -1,0 +1,12 @@
+
+mysql:
+  address: mysql:3306
+redis:
+  address: redis:6379
+server:
+  address: 0.0.0.0:8080
+  tls: false
+logging:
+  json: true
+auth:
+  jwt_key: changeme

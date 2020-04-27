@@ -1,0 +1,16 @@
+
+mysql:
+  address: 127.0.0.1:3306
+  database: kolide
+  username: root
+  password: toor
+redis:
+  address: 127.0.0.1:6379
+server:
+  cert: /tmp/server.cert
+  key: /tmp/server.key
+logging:
+  json: true
+auth:
+  jwt_key: changeme
+

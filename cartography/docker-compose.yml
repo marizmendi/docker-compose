@@ -1,0 +1,33 @@
+version: '3.7'
+
+services:
+  cartography:
+    image: manmar92/cartography
+    build: .
+    volumes:
+      - ~/.aws:/root/.aws:ro
+    environment:
+      NEO4J_URI: bolt://neo4j:7687
+    depends_on:
+      - neo4j
+    networks:
+      - cartography-net
+    restart: on-failure
+
+  neo4j:
+    image: neo4j:3.5
+    environment:
+      NEO4J_AUTH: none
+    volumes:
+      - neo4j-data:/data
+    ports:
+      - 7474:7474
+      - 7687:7687
+    networks:
+      - cartography-net
+
+volumes:
+  neo4j-data:
+
+networks:
+  cartography-net:
