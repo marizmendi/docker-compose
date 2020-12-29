@@ -1,7 +1,11 @@
 version: '2.2'
 services:
   es01:
+<<<<<<< HEAD
     image: docker.elastic.co/elasticsearch/elasticsearch-oss:7.8.0
+=======
+    image: docker.elastic.co/elasticsearch/elasticsearch-oss:7.10.1
+>>>>>>> 365597d1e3e1966bcd08b0075ad90c8456cb977c
     container_name: es01
     environment:
       - node.name=es01
@@ -22,7 +26,11 @@ services:
       - elastic
 
   es02:
+<<<<<<< HEAD
     image: docker.elastic.co/elasticsearch/elasticsearch-oss:7.8.0
+=======
+    image: docker.elastic.co/elasticsearch/elasticsearch-oss:7.10.1
+>>>>>>> 365597d1e3e1966bcd08b0075ad90c8456cb977c
     container_name: es02
     environment:
       - node.name=es02
@@ -43,7 +51,11 @@ services:
       - elastic
 
   es03:
+<<<<<<< HEAD
     image: docker.elastic.co/elasticsearch/elasticsearch-oss:7.8.0
+=======
+    image: docker.elastic.co/elasticsearch/elasticsearch-oss:7.10.1
+>>>>>>> 365597d1e3e1966bcd08b0075ad90c8456cb977c
     container_name: es03
     environment:
       - node.name=es03
@@ -64,7 +76,11 @@ services:
       - elastic
 
   kib01:
+<<<<<<< HEAD
     image: docker.elastic.co/kibana/kibana-oss:7.8.0
+=======
+    image: docker.elastic.co/kibana/kibana-oss:7.10.1
+>>>>>>> 365597d1e3e1966bcd08b0075ad90c8456cb977c
     container_name: kib01
     ports:
       - 5601:5601

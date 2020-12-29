@@ -1,0 +1,6 @@
+version: '2.2'
+services:
+  jupyter:
+    image: jupyter/base-notebook
+    ports:
+        - 8888:8888
